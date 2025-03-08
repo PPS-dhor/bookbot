@@ -5,12 +5,14 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     num_chars = get_num_char(text)
+    # print(text)  # L3: Read file
+    print(f"{num_words} words found in the document")  # LL4 & 5: Count words & Refactor
     # print("--- Begin report of books/frankenstein.txt ---")
     # print(f"{num_words} words found in the document")
     # print(' ')
     # print_char_list(num_chars)
     # print("--- End report ---")
-    print(num_words)
+    # print(num_words)
 
 def get_book_text(path):
     with open(path, 'r', encoding='utf-8') as f:
